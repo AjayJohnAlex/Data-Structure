@@ -8,11 +8,11 @@ class TestEmployee(unittest.TestCase):
     like build a Db connection till the test cases are running. Then we can create class methods for this'''
     
     @classmethod
-    def setUpClass(self):
+    def setUpClass(cls):
         print("Set Up Class is being executed \n")
         
     @classmethod
-    def tearDownClass(self):
+    def tearDownClass(cls):
         print("Tear Down Class is being executed\n")
     
     '''as the object creation is repetative in each test case we can use setUp &
